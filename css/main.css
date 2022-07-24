@@ -37,7 +37,7 @@
     list-style: none;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 body{
     font-family: 'Recursive', sans-serif;
@@ -91,6 +91,9 @@ main{
 }
 .list__item + .list__item {
     margin-left: 30px;
+}
+.list__item{
+    overflow-y: hidden;
 }
 .list__link{
     font-size: 20px;
