@@ -9,6 +9,9 @@ var elModalLink = document.querySelector(".modal__link")
 var elModalLink1 = document.querySelector(".modal1")
 var elModalLink2 = document.querySelector(".modal2")
 var elModalLink3 = document.querySelector(".modal3")
+var elMain = document.querySelector("main")
+var elFooter = document.querySelector("footer")
+
 
 
 elHamburger.addEventListener("click", function() {
@@ -17,6 +20,22 @@ elHamburger.addEventListener("click", function() {
     elHamLine1.classList.toggle("rotate")
     elHamLine2.classList.toggle("rotate-open2")
 } )
+
+elMain.addEventListener("click", function() {
+    elModal.classList.remove("open")
+    elHamLine.classList.remove("rotate-open1")
+    elHamLine1.classList.remove("rotate")
+    elHamLine2.classList.remove("rotate-open2")
+})
+elFooter.addEventListener("click", function() {
+    elModal.classList.remove("open")
+    elHamLine.classList.remove("rotate-open1")
+    elHamLine1.classList.remove("rotate")
+    elHamLine2.classList.remove("rotate-open2")
+})
+
+
+
 elModalLink.addEventListener("click", function() {
     elModal.classList.remove("open")
     elHamLine.classList.remove("rotate-open1")
