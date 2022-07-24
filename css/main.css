@@ -37,6 +37,7 @@
     list-style: none;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    overflow-x: hidden;
 }
 body{
     font-family: 'Recursive', sans-serif;
@@ -229,6 +230,9 @@ main{
     }
     .header__tel, .header__instagram{
         font-size: 15px;
+    }
+    .header__top{
+        justify-content: center;
     }
 
 }
