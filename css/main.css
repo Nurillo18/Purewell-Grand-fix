@@ -74,6 +74,11 @@ main{
 }
 .header__link-logo{
     display: inline-block;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #333;
 }
 .header__left-links{
     display: flex;
@@ -157,7 +162,7 @@ main{
     border-bottom-right-radius: 5px;
     width: 300px;
     position: fixed;
-    top: 92px;
+    top: 109px;
     right: 0;
     /* transform: translateX(145px); */
     background-color: var(--clr-modal);
@@ -683,8 +688,7 @@ main{
         justify-content: center;
     }
     .videos-first{
-        width: 100px;
-        height: 200px;
+        width: 100%;
     }
     .videos-first:nth-child(2){
         margin-left: 10px;
