@@ -138,6 +138,8 @@ main{
     align-items: center;
     flex-direction: column;
     display: none;
+    width: 40px;
+    height: 40px;
 }
 .header__hamburger-line{
     display: inline-block;
@@ -203,13 +205,13 @@ main{
         opacity: 1;
     }
     .rotate-open1{
-        transform: rotate(45deg) translateY(11px);
+        transform: rotate(45deg) translateY(11px) translateX(10px);
     }
     .rotate{
         opacity: 0;
     }
     .rotate-open2{
-        transform: rotate(-45deg) translateY(-11px);
+        transform: rotate(-45deg) translateY(-1px);
     }
 }
 @media only screen and (max-width:562px){
