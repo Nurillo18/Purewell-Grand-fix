@@ -57,7 +57,7 @@ body{
     padding: 10px 0;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
     background-color: #F7F7F7;
-    position: fixed;
+    /* position: fixed; */
     right: 0;
     left: 0;
     z-index: 999999999999999;
@@ -164,10 +164,10 @@ body{
     margin-top: 5px;
 }
 .modal{
-    padding: 10px 20px 0 20px;
+    padding: 10px 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 300px;
+    width: 100%;
     position: fixed;
     top: 109px;
     right: 0;
@@ -177,14 +177,19 @@ body{
 }
 .modal__link{
     display: inline-block;
-    margin-bottom: 10px;
     color: var(--clr-clr);
     border-bottom:2px solid transparent;
     border-radius: 2px;
+    font-size: 15px;
 }
 .modal__link:hover{
     color:var(--clr-hover-bg);
     border-bottom: 2px solid var(--clr-hover-bg);
+}
+.modal__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @keyframes opened {
@@ -225,6 +230,9 @@ body{
     .rotate-open2{
         transform: rotate(-45deg) translateY(-1px);
     }
+    .modal__link{
+        font-size: 12px;
+    }
 }
 @media only screen and (max-width:562px){
     .header__links{
@@ -242,6 +250,7 @@ body{
     .modal{
         width: 100%;
         text-align: center;
+        padding: 10px;
     }
     .header__tel, .header__instagram{
         font-size: 15px;
@@ -249,8 +258,23 @@ body{
     .header__top{
         justify-content: space-between;
     }
+    .modal__link{
+        font-size: 11px;
+    }
 
 }
+@media only screen and (max-width:492px){
+    .header__top{
+        justify-content: center;
+    }
+    .modal__list{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .modal__item{
+    }
+}
+
 @media only screen and (max-width:308px){
     .modal{
         top: 126px;
@@ -322,7 +346,6 @@ body{
 .hero-section{
     padding: 35px 0;
     text-align: center;
-    margin-top: 60px;
 }
 .hero__list{
     padding: 20px 0;
@@ -759,3 +782,53 @@ body{
     }
 }
 /* Footer Styles End */
+
+
+
+
+/* Basic Section Start */
+
+.basic-section{
+    margin-top: -40px;
+    padding: 120px 0;
+    background-image: url("../images/kichen.jpg");
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+}
+.basic{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(33, 35, 38, 0.25);
+    text-align: center;
+}
+.basic__title{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 5px #333;
+}
+.basic__text{
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0 0 5px #333;
+}
+@media only screen and (max-width:649px){
+    .basic__title{
+        font-size: 35px;
+    }
+    .basic__text{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:387px){
+    .basic-section{
+        margin-top: 53px;
+    }
+    .modal{
+        top: 124px;
+    }
+}
+
+/* Basic Section End */
