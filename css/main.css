@@ -595,9 +595,7 @@ body{
     .hero__item:nth-child(4) {
         margin-top: 20px;
     }
-    .img1{
-        transform: scale(0.6) translateY(-60px);
-    }
+
     .img2 {
         transform: scale(0.8) translateY(-16px);
     }
@@ -623,6 +621,9 @@ body{
     }
     .img6 {
         transform: scale(1.1) translateY(-18px) translateX(3px);
+    }
+    .img1{
+        transform: scale(0.6) translateY(-60px);
     }
 }
 @media only screen and (max-width:450px){
@@ -682,9 +683,6 @@ body{
         margin:  auto;
         transform: scale(0.35);
         z-index: 9999;
-    }
-    .img1{
-        transform: scale(0.3);
     }
 
 
@@ -1323,6 +1321,7 @@ body{
 }
 .basic-menu__link{
     color: #fff;
+    font-size: 15px;
 }
 .basic-menu__tel{
     color:#fff;
@@ -1354,6 +1353,15 @@ body{
     }
     .basic-menu__item{
         font-size: 12px;
+    }
+    .clients__title{
+        font-size: 30px;
+    }
+
+}
+@media only screen and (max-width:348px){
+    .basic-menu__link{
+        font-size: 11px;
     }
 
 }
