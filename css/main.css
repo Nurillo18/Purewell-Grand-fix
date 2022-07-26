@@ -742,7 +742,7 @@ body{
     position: relative;
     padding: 60px 0;
     background-color: #333;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .choose-us-section::before {
     width: 600px;
