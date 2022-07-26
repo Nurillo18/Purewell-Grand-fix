@@ -998,6 +998,7 @@ body{
     background-image: url("../images/card-fon.png");
     background-repeat: no-repeat;
     background-position: right bottom;
+    /* z-index: 999; */
 }
 
 .clients__img{
@@ -1154,7 +1155,7 @@ body{
 
 /* Deliver Section Start */
 .deliver-section{
-    z-index: 555555555555;
+    z-index: -1;
     position: relative;
     padding: 80px 0;
     background-color: #5183A6;
@@ -1184,7 +1185,7 @@ body{
     .deliver-section{
         overflow-y: hidden;
         padding: 20px 0 200px 0;
-        z-index: 5555555555;
+        /* z-index: 5555555555; */
     }
     .deliver-section::before{
         z-index: -1;
@@ -1474,3 +1475,62 @@ body{
 
 }
 /* Basic Section End */
+
+
+.ring-btn{
+    cursor: pointer;
+    border: none;
+    border-radius:10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 150px;
+    z-index: 9999999999;
+    right: -204px;
+}
+.right-to{
+    right: 0;
+}
+.rigging-img-wrapper{
+    padding: 5px 6px;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    margin-right: 10px;
+    animation: ring 0.4s ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes ring {
+    0%{
+       box-shadow: 0 0 2px 2px green ;
+       transform: rotate(45deg);
+    }
+    100%{
+        box-shadow: 0 0 5px 5px green;
+        transform: rotate(-45deg);
+
+    }
+}
+
+.ring-cals{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ring__items{
+    color: #333;
+    border-bottom: 2px solid transparent;
+    font-weight: bold;
+}
+.ring__items:hover{
+    border-bottom: 2px solid #333;
+
+}
+.ring__items + .ring__items {
+    margin-top: 10px;
+}
