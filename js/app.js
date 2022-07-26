@@ -14,6 +14,8 @@ var elFooter = document.querySelector("footer")
 
 
 
+
+
 elHamburger.addEventListener("click", function() {
     elModal.classList.toggle("open")
     elHamLine.classList.toggle("rotate-open1")

@@ -91,6 +91,26 @@
     <!-- Site Header End -->
     <!-- Site Main Start -->
     <main class="site-main">
+        <div class="basic-menu">
+            <ul class="basic-menu__list">
+                <li class="basic-menu__item">
+                    <a class="basic-menu__link" href="#products">техника</a>
+                </li>
+                <li class="basic-menu__item">
+                    <a class="basic-menu__link" href="#clients">мижозлар</a>
+                </li>
+                <li class="basic-menu__item">
+                    <a class="basic-menu__link" href="#about">биз ҳақимизда</a>
+                </li>
+                <li class="basic-menu__item">
+                    <a class="basic-menu__link" href="#deliver">хизматлар</a>
+                </li>
+            </ul>
+            <div class="basic-manu__links">
+                <a class="basic-menu__tel" href="tel:+998992086553">+998 (99) 208-65-53</a>
+                <a class="basic-menu__tel" href="tel:+998991826553">+998 (99) 182-65-53</a>
+            </div>
+        </div>
         <h1 class="main-title">Purewell Grand company</h1>
         <section class="basic-section">
             <div class="container">
@@ -110,23 +130,23 @@
                 <div class="hero">
                     <h2 class="hero__title">Маҳсулотларимиз</h2>
                     <ul class="hero__list">
-                        <li class="hero__item" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
-                            <img class="hero__materials-img" src="./images/aqualife.png" alt="Aqualife filter" width="350" height="300">
+                        <li class="hero__item">
+                            <img class="hero__materials-img img1" src="./images/aqualife.png" alt="Aqualife filter">
                         </li>
-                        <li class="hero__item" data-aos="fade-left" data-aos-duration="700" data-aos-once="true" >
-                            <img class="hero__materials-img" src="./images/bichok.png" alt="Yomkost filter" width="350" height="300">
+                        <li class="hero__item">
+                            <img class="hero__materials-img img2" src="./images/bichok.png" alt="Yomkost filter">
                         </li>
-                        <li class="hero__item" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
-                            <img class="hero__materials-img" src="./images/simistitel.png" alt="Smistitel filter" width="350" height="300">
+                        <li class="hero__item">
+                            <img class="hero__materials-img img3" src="./images/simistitel.png" alt="Smistitel filter">
                         </li>
-                        <li class="hero__item" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
-                            <img class="hero__materials-img" src="./images/material-inside.png" alt="Inside filter" width="350" height="300">
+                        <li class="hero__item">
+                            <img class="hero__materials-img img4" src="./images/material-inside.png" alt="Inside filter">
                         </li>
-                        <li class="hero__item" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
-                            <img class="hero__materials-img prob-img" src="./images/full-view2.jpg" alt="Smistitel filter" width="350" height="300">
+                        <li class="hero__item">
+                            <img class="hero__materials-img prob-img img5" src="./images/full-view2.jpg" alt="Smistitel filter">
                         </li>
-                        <li class="hero__item" data-aos="fade-right" data-aos-duration="850" data-aos-once="true">
-                            <img class="hero__materials-img list-img" src="./images/about-materail.png" alt="Smistitel filter" width="350" height="300">
+                        <li class="hero__item">
+                            <img class="hero__materials-img list-img img6" src="./images/about-materail.png" alt="Smistitel filter">
                         </li>
                     </ul>
                 </div>
@@ -135,7 +155,7 @@
         <section id="choose" class="choose-us-section">
             <div class="container">
                 <div class="choose">
-                    <div class="choose__content" data-aos="fade-right" ata-aos="fade-top" data-aos-duration="700" data-aos-once="true">
+                    <div class="choose__content">
                         <h2 class="chose__title">
                             Биз сизга соф ва ишончли маҳсулот тақдим эта оламиз.
                         </h2>
@@ -160,15 +180,15 @@
                 <div class="clients">
 
                     <ul class="clients__list">
-                        <li class="clients__item" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
+                        <li class="clients__item" >
                             <img class="clients__img" src="./clients/img1.jpg" alt="Clients Img" width="300" height="290">
                             <strong class="clients__subtitle">Мижозларимиз билан ..</strong>
                         </li>
-                        <li class="clients__item" data-aos="zoom-in" data-aos-duration="700" data-aos-once="true">
+                        <li class="clients__item">
                             <img class="clients__img" src="./clients/img3.jpg" alt="Clients Img" width="300" height="290">
                             <strong class="clients__subtitle">Мижозларимиз билан ..</strong>
                         </li>
-                        <li class="clients__item" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+                        <li class="clients__item" >
                             <img class="clients__img" src="./clients/img8.jpg" alt="Clients Img" width="300" height="290">
                             <strong class="clients__subtitle">Мижозларимиз билан ..</strong>
                         </li>
@@ -249,27 +269,9 @@
         </div>
     </footer>
     <!-- Site Footer End -->
-    <script src="./js/app.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-        AOS.init();
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    <script src="./js/app.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
