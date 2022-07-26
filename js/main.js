@@ -23,13 +23,12 @@ elImg1.addEventListener("click", function() {
     elImg5.classList.toggle("del")
     elImg6.classList.toggle("del")
     elBasixName.classList.toggle("opasity")
-    // elItem1.classList.toggle("del")
+    elItem1.classList.toggle("del-opasi")
     elItem2.classList.toggle("del")
     elItem3.classList.toggle("del")
-    // elItem4.classList.toggle("del")
+    elItem4.classList.toggle("del-opasi")
     elItem5.classList.toggle("del")
     elItem6.classList.toggle("del")
-    elDeleteImg.classList.toggle("open")
 
 })
 elImg2.addEventListener("click", function() {
@@ -41,25 +40,23 @@ elImg2.addEventListener("click", function() {
     elImg6.classList.toggle("del")
     elBasixName.classList.toggle("opasity")
     elItem1.classList.toggle("del")
-    // elItem2.classList.toggle("del")
-    // elItem3.classList.toggle("del")
+    elItem2.classList.toggle("del-opasi")
+    elItem3.classList.toggle("del-opasi")
     elItem4.classList.toggle("del")
     elItem5.classList.toggle("del")
     elItem6.classList.toggle("del")
-
-
 })
 elImg3.addEventListener("click", function() {
-    elImg3.classList.toggle("scale")
+    elImg3.classList.toggle("scales")
     elImg1.classList.toggle("del")
     elImg2.classList.toggle("del")
     elImg4.classList.toggle("del")
     elImg5.classList.toggle("del")
     elImg6.classList.toggle("del")
     elBasixName.classList.toggle("opasity")
-    // elItem1.classList.toggle("del")
+    elItem1.classList.toggle("del-opasi")
     elItem2.classList.toggle("del")
-    // elItem3.classList.toggle("del")
+    elItem3.classList.toggle("del-opasi")
     elItem4.classList.toggle("del")
     elItem5.classList.toggle("del")
     elItem6.classList.toggle("del")
@@ -74,12 +71,12 @@ elImg4.addEventListener("click", function() {
     elImg5.classList.toggle("del")
     elImg6.classList.toggle("del")
     elBasixName.classList.toggle("opasity")
-    // elItem1.classList.toggle("del")
-    elItem2.classList.toggle("del")
-    // elItem3.classList.toggle("del")
-    // elItem4.classList.toggle("del")
-    // elItem5.classList.toggle("del")
-    // elItem6.classList.toggle("del")
+    elItem1.classList.toggle("del-opasi")
+    elItem2.classList.toggle("del-opasi")
+    elItem3.classList.toggle("del-opasi")
+    elItem4.classList.toggle("del-opasi")
+    elItem5.classList.toggle("del-opasi")
+    elItem6.classList.toggle("del-opasi")
 
 
 })
@@ -91,6 +88,12 @@ elImg5.addEventListener("click", function() {
     elImg2.classList.toggle("del")
     elImg6.classList.toggle("del")
     elBasixName.classList.toggle("opasity")
+    elItem1.classList.toggle("del-opasi")
+    elItem2.classList.toggle("del-opasi")
+    elItem3.classList.toggle("del-opasi")
+    elItem4.classList.toggle("del-opasi")
+    elItem5.classList.toggle("del-opasi")
+    elItem6.classList.toggle("del-opasi")
 
 })
 elImg6.addEventListener("click", function() {
@@ -101,5 +104,173 @@ elImg6.addEventListener("click", function() {
     elImg1.classList.toggle("del")
     elImg2.classList.toggle("del")
     elBasixName.classList.toggle("opasity")
+    elItem1.classList.toggle("del-opasi")
+    elItem2.classList.toggle("del-opasi")
+    elItem3.classList.toggle("del-opasi")
+    elItem4.classList.toggle("del-opasi")
+    elItem5.classList.toggle("del-opasi")
+    elItem6.classList.toggle("del-opasi")
 
+})
+
+let elSecImg1 = document.querySelector(".c-img1")
+let elSecImg2 = document.querySelector(".c-img2")
+let elSecImg3 = document.querySelector(".c-img3")
+let elSecImg4 = document.querySelector(".c-img4")
+let elSecImg5 = document.querySelector(".c-img5")
+let elSecImg6 = document.querySelector(".c-img6")
+
+let elSecItem1 = document.querySelector(".c-item1")
+let elSecItem2 = document.querySelector(".c-item2")
+let elSecItem3 = document.querySelector(".c-item3")
+let elSecItem4 = document.querySelector(".c-item4")
+let elSecItem5 = document.querySelector(".c-item5")
+let elSecItem6 = document.querySelector(".c-item6")
+
+
+elSecImg1.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elSecImg1.classList.toggle("clients-scale")
+    elSecImg2.classList.toggle("del")
+    elSecImg3.classList.toggle("del")
+    elSecImg4.classList.toggle("del")
+    elSecImg5.classList.toggle("del")
+    elSecImg6.classList.toggle("del")
+
+    elSecItem1.classList.toggle("del-sec")
+    elSecItem2.classList.toggle("del-sec-opasity")
+    elSecItem3.classList.toggle("del-sec-opasity")
+    elSecItem4.classList.toggle("del-sec-opasity")
+    elSecItem5.classList.toggle("del-sec-opasity")
+    elSecItem6.classList.toggle("del-sec-opasity")
+
+})
+elSecImg2.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elSecImg1.classList.toggle("del")
+    elSecImg2.classList.toggle("clients-scale")
+    elSecImg3.classList.toggle("del")
+    elSecImg4.classList.toggle("del")
+    elSecImg5.classList.toggle("del")
+    elSecImg6.classList.toggle("del")
+
+    elSecItem1.classList.toggle("del-sec-opasity")
+    elSecItem2.classList.toggle("del-sec")
+    elSecItem3.classList.toggle("del-sec-opasity")
+    elSecItem4.classList.toggle("del-sec-opasity")
+    elSecItem5.classList.toggle("del-sec-opasity")
+    elSecItem6.classList.toggle("del-sec-opasity")
+
+})
+elSecImg3.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elSecImg1.classList.toggle("del")
+    elSecImg2.classList.toggle("del")
+    elSecImg3.classList.toggle("clients-scale")
+    elSecImg4.classList.toggle("del")
+    elSecImg5.classList.toggle("del")
+    elSecImg6.classList.toggle("del")
+
+    elSecItem1.classList.toggle("del-sec-opasity")
+    elSecItem2.classList.toggle("del-sec-opasity")
+    elSecItem3.classList.toggle("del-sec")
+    elSecItem4.classList.toggle("del-sec-opasity")
+    elSecItem5.classList.toggle("del-sec-opasity")
+    elSecItem6.classList.toggle("del-sec-opasity")
+
+})
+elSecImg4.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elSecImg1.classList.toggle("del")
+    elSecImg2.classList.toggle("del")
+    elSecImg3.classList.toggle("del")
+    elSecImg4.classList.toggle("clients-scale")
+    elSecImg5.classList.toggle("del")
+    elSecImg6.classList.toggle("del")
+
+    elSecItem1.classList.toggle("del-sec-opasity")
+    elSecItem2.classList.toggle("del-sec-opasity")
+    elSecItem3.classList.toggle("del-sec-opasity")
+    elSecItem4.classList.toggle("del-sec")
+    elSecItem5.classList.toggle("del-sec-opasity")
+    elSecItem6.classList.toggle("del-sec-opasity")
+
+})
+elSecImg5.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elSecImg1.classList.toggle("del")
+    elSecImg2.classList.toggle("del")
+    elSecImg3.classList.toggle("del")
+    elSecImg4.classList.toggle("del")
+    elSecImg5.classList.toggle("clients-scale")
+    elSecImg6.classList.toggle("del")
+
+    elSecItem1.classList.toggle("del-sec-opasity")
+    elSecItem2.classList.toggle("del-sec-opasity")
+    elSecItem3.classList.toggle("del-sec-opasity")
+    elSecItem4.classList.toggle("del-sec-opasity")
+    elSecItem5.classList.toggle("del-sec")
+    elSecItem6.classList.toggle("del-sec-opasity")
+
+})
+elSecImg6.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elSecImg1.classList.toggle("del")
+    elSecImg2.classList.toggle("del")
+    elSecImg3.classList.toggle("del")
+    elSecImg4.classList.toggle("del")
+    elSecImg5.classList.toggle("del")
+    elSecImg6.classList.toggle("clients-scale")
+
+    elSecItem1.classList.toggle("del-sec-opasity")
+    elSecItem2.classList.toggle("del-sec-opasity")
+    elSecItem3.classList.toggle("del-sec-opasity")
+    elSecItem4.classList.toggle("del-sec-opasity")
+    elSecItem5.classList.toggle("del-sec-opasity")
+    elSecItem6.classList.toggle("del-sec")
+
+})
+
+let elAboueItem1 = document.querySelectorAll(".about-item1")
+let elAboueItem2 = document.querySelectorAll(".about-item2")
+let elAboueItem3 = document.querySelectorAll(".about-item3")
+let elAboueItem4 = document.querySelectorAll(".about-item4")
+let elAboueItem5 = document.querySelectorAll(".about-item5")
+let elAboueItem6 = document.querySelectorAll(".about-item6")
+
+let elAboutImg1 = document.querySelector(".about-img1")
+let elAboutImg2 = document.querySelector(".about-img2")
+let elAboutImg3 = document.querySelector(".about-img3")
+let elAboutImg4 = document.querySelector(".about-img4")
+let elAboutImg5 = document.querySelector(".about-img5")
+let elAboutImg6 = document.querySelector(".about-img6")
+
+elAboutImg1.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elAboutImg1.classList.toggle("clients-scale")
+})
+
+elAboutImg2.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elAboutImg2.classList.toggle("clients-scale")
+})
+
+elAboutImg3.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elAboutImg3.classList.toggle("clients-scale")
+})
+
+elAboutImg4.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elAboutImg4.classList.toggle("clients-scale")
+})
+
+elAboutImg5.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elAboutImg6.classList.toggle("clients-scale")
+})
+
+elAboutImg6.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elAboutImg6.classList.toggle("clients-scale")
 })
