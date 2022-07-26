@@ -11,8 +11,7 @@ var elModalLink2 = document.querySelector(".modal2")
 var elModalLink3 = document.querySelector(".modal3")
 var elMain = document.querySelector("main")
 var elFooter = document.querySelector("footer")
-
-
+let elModalLast = document.querySelector(".elModal")
 
 
 
@@ -22,6 +21,7 @@ elHamburger.addEventListener("click", function() {
     elHamLine.classList.toggle("rotate-open1")
     elHamLine1.classList.toggle("rotate")
     elHamLine2.classList.toggle("rotate-open2")
+    elModalLast.classList.toggle("down-traform")
 } )
 
 elMain.addEventListener("click", function() {
@@ -29,12 +29,16 @@ elMain.addEventListener("click", function() {
     elHamLine.classList.remove("rotate-open1")
     elHamLine1.classList.remove("rotate")
     elHamLine2.classList.remove("rotate-open2")
+    elModalLast.classList.remove("down-traform")
+
 })
 elFooter.addEventListener("click", function() {
     elModal.classList.remove("open")
     elHamLine.classList.remove("rotate-open1")
     elHamLine1.classList.remove("rotate")
     elHamLine2.classList.remove("rotate-open2")
+    elModalLast.classList.remove("down-traform")
+
 })
 
 
@@ -62,5 +66,9 @@ elModalLink3.addEventListener("click", function() {
 })
 window.addEventListener("scroll", function() {
     elHeader.classList.toggle("sticky", window.scrollY > 0)
+
+})
+window.addEventListener("scroll", function() {
+    elModalLast.classList.toggle("please-deltee", window.scrollY > 80)
 
 })

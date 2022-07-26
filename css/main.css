@@ -49,10 +49,109 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-
-
-    /* Header Styles Start */
 }
+.elModal{
+    padding: 10px;
+    width: 100%;
+    background-color:#5183A6;
+    position: fixed;
+    top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-400px);
+}
+
+.elModa__list{
+    display: flex;
+    align-items: center;
+}
+.elModal__item + .elModal__item {
+    margin-left: 20px;
+}
+.elModal__link{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.tels__tel{
+    position: relative;
+    padding-left: 35px;
+    color: #fff;
+    margin-right: 50px;
+}
+.tels__tel::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    content: "";
+    background-image: url("../images/tel.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+}
+.tels__ins{
+    color: #fff;
+    font-weight: 400;
+    padding-left: 35px;
+    font-size: 20px;
+    position: relative;
+}
+.tels__ins::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    content: "";
+    background-image: url("../images/instagram.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 32px;
+    height: 32px;
+}
+@media only screen and (max-width:882px) {
+    .elModal{
+        flex-direction: column;
+        text-align: center;
+    }
+    .tels{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width:484px) {
+    .tels__ins{
+        font-size: 15px;
+    }
+    .tels__tel{
+        font-size: 15px;
+    }
+    .elModal__link{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:404px) {
+    .elModa__list{
+        flex-direction: column;
+    }
+    .elModal__item + .elModal__item{
+         margin-left: 0;
+         margin-top: 10px;
+    }
+    .tels{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    .tels__tel{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/* Header Styles Start */
 .site-header{
     position: relative;
     padding: 10px 0;
@@ -180,6 +279,7 @@ body{
     justify-content: space-between;
     display: none;
 }
+
 .modal__item + .modal__item {
     margin-left: 10px;
 }
@@ -223,6 +323,13 @@ body{
     .header__hamburger-wrapper{
         display: flex;
         margin-left: 40px;
+    }
+    .down-traform{
+        z-index: 999090090;
+        transform: translateY(-85px);
+    }
+    .please-deltee{
+        transform: translateY(-400px);
     }
     .open{
         animation: opened 0.4s ease-in-out;
