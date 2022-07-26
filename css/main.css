@@ -1492,6 +1492,12 @@ body{
 .right-to{
     right: 0;
 }
+.caption{
+    margin-bottom: 10px;
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+}
 .rigging-img-wrapper{
     padding: 5px 6px;
     border-radius: 50%;
