@@ -12,11 +12,6 @@ var elModalLink3 = document.querySelector(".modal3")
 var elMain = document.querySelector("main")
 var elFooter = document.querySelector("footer")
 let elModalLast = document.querySelector(".elModal")
-let elPhone = document.querySelector(".ring-btn")
-
-elPhone.addEventListener("click", function() {
-    elPhone.classList.toggle("right-to")
-})
 
 
 elHamburger.addEventListener("click", function() {

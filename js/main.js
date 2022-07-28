@@ -18,6 +18,11 @@ let elHero = document.querySelector(".hero-section")
 let elAbout = document.querySelector(".about-us-section")
 let elBasicManu = document.querySelector(".basic-menu")
 
+let elPhone = document.querySelector(".ring-btn")
+
+elPhone.addEventListener("click", function() {
+    elPhone.classList.toggle("right-to")
+})
 
 window.addEventListener("scroll", function() {
     elBasicManu.classList.remove("none", elHero.scrollY > 100)
@@ -58,6 +63,7 @@ window.addEventListener("scroll", function() {
 
 elImg1.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
     elImg1.classList.toggle("scale")
     elImg2.classList.toggle("del")
     elImg3.classList.toggle("del")
@@ -75,7 +81,7 @@ elImg1.addEventListener("click", function() {
 })
 elImg2.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
-
+    elPhone.classList.toggle("none")
     elImg2.classList.toggle("scale")
     elImg1.classList.toggle("del")
     elImg3.classList.toggle("del")
@@ -92,6 +98,7 @@ elImg2.addEventListener("click", function() {
 })
 elImg3.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
     elImg3.classList.toggle("scales")
     elImg1.classList.toggle("del")
@@ -111,6 +118,7 @@ elImg3.addEventListener("click", function() {
 })
 elImg4.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
     elImg4.classList.toggle("scale")
     elImg3.classList.toggle("del")
@@ -130,6 +138,7 @@ elImg4.addEventListener("click", function() {
 })
 elImg5.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
     elImg5.classList.toggle("scale")
     elImg4.classList.toggle("del")
@@ -148,6 +157,7 @@ elImg5.addEventListener("click", function() {
 })
 elImg6.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
     elImg6.classList.toggle("scale")
     elImg5.classList.toggle("del")
@@ -180,7 +190,7 @@ let elSecItem5 = document.querySelector(".c-item5")
 let elSecItem6 = document.querySelector(".c-item6")
 
 window.addEventListener("scroll", function() {
-
+    elPhone.classList.remove("none", elClients.scrollY > 10)
     elSecItem1.classList.remove("del-sec", elClients.scrollY > 10)
     elSecItem2.classList.remove("del-sec", elClients.scrollY > 10)
     elSecItem3.classList.remove("del-sec", elClients.scrollY > 10)
@@ -213,6 +223,8 @@ window.addEventListener("scroll", function() {
 
 elSecImg1.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
+
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("clients-scale")
     elSecImg2.classList.toggle("del")
@@ -231,6 +243,7 @@ elSecImg1.addEventListener("click", function() {
 })
 elSecImg2.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
@@ -250,6 +263,7 @@ elSecImg2.addEventListener("click", function() {
 })
 elSecImg3.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
@@ -269,6 +283,7 @@ elSecImg3.addEventListener("click", function() {
 })
 elSecImg4.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
@@ -288,6 +303,7 @@ elSecImg4.addEventListener("click", function() {
 })
 elSecImg5.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
@@ -307,6 +323,7 @@ elSecImg5.addEventListener("click", function() {
 })
 elSecImg6.addEventListener("click", function() {
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
@@ -341,6 +358,7 @@ let elAboutImg6 = document.querySelector(".about-img6")
 
 
 window.addEventListener("scroll", function(){
+    elPhone.classList.remove("none",elAbout.scrollY > 100 )
     elAboutImg1.classList.remove("clients-scale", elAbout.scrollY > 100)
     elAboutImg2.classList.remove("clients-scale", elAbout.scrollY > 100)
     elAboutImg3.classList.remove("clients-scale", elAbout.scrollY > 100)
@@ -349,15 +367,18 @@ window.addEventListener("scroll", function(){
 })
 
 elAboutImg1.addEventListener("click", function() {
+    elPhone.classList.toggle("none")
     elBasixName.classList.toggle("opasity")
     elAboutImg1.classList.toggle("clients-scale")
     elBasicManu.classList.toggle("none")
+
 })
 
 elAboutImg2.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg2.classList.toggle("clients-scale")
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
 })
 
@@ -365,6 +386,7 @@ elAboutImg3.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg3.classList.toggle("clients-scale")
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
 })
 
@@ -372,6 +394,7 @@ elAboutImg4.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg4.classList.toggle("clients-scale")
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
 })
 
@@ -379,6 +402,7 @@ elAboutImg5.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg6.classList.toggle("clients-scale")
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
 })
 
@@ -386,5 +410,6 @@ elAboutImg6.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg6.classList.toggle("clients-scale")
     elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
 
 })
