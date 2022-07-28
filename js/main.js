@@ -372,7 +372,9 @@ window.addEventListener("scroll", function(){
     elAboutImg5.classList.remove("clients-scale", elAbout.scrollY > 100)
     elAboutImg6.classList.remove("clients-scale", elAbout.scrollY > 100)
     elAboutImg7.classList.remove("clients-scale", elAbout.scrollY > 100)
+    elAboutImg7.classList.remove("cli", elAbout.scrollY > 100)
     elAboutImg8.classList.remove("clients-scale", elAbout.scrollY > 100)
+    elAboutImg8.classList.remove("cli", elAbout.scrollY > 100)
 })
 
 elAboutImg1.addEventListener("click", function() {
@@ -425,6 +427,7 @@ elAboutImg6.addEventListener("click", function() {
 elAboutImg7.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg7.classList.toggle("clients-scale")
+    elAboutImg7.classList.toggle("cli")
     elBasicManu.classList.toggle("none")
     elPhone.classList.toggle("none")
 
@@ -432,6 +435,7 @@ elAboutImg7.addEventListener("click", function() {
 elAboutImg8.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg8.classList.toggle("clients-scale")
+    elAboutImg8.classList.toggle("cli")
     elBasicManu.classList.toggle("none")
     elPhone.classList.toggle("none")
 
