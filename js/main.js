@@ -350,6 +350,8 @@ let elAboueItem3 = document.querySelectorAll(".about-item3")
 let elAboueItem4 = document.querySelectorAll(".about-item4")
 let elAboueItem5 = document.querySelectorAll(".about-item5")
 let elAboueItem6 = document.querySelectorAll(".about-item6")
+let elAboueItem7 = document.querySelectorAll(".about-item7")
+let elAboueItem8 = document.querySelectorAll(".about-item8")
 
 let elAboutImg1 = document.querySelector(".about-img1")
 let elAboutImg2 = document.querySelector(".about-img2")
@@ -357,6 +359,8 @@ let elAboutImg3 = document.querySelector(".about-img3")
 let elAboutImg4 = document.querySelector(".about-img4")
 let elAboutImg5 = document.querySelector(".about-img5")
 let elAboutImg6 = document.querySelector(".about-img6")
+let elAboutImg7 = document.querySelector(".about-img7")
+let elAboutImg8 = document.querySelector(".about-img8")
 
 
 window.addEventListener("scroll", function(){
@@ -366,6 +370,9 @@ window.addEventListener("scroll", function(){
     elAboutImg3.classList.remove("clients-scale", elAbout.scrollY > 100)
     elAboutImg4.classList.remove("clients-scale", elAbout.scrollY > 100)
     elAboutImg5.classList.remove("clients-scale", elAbout.scrollY > 100)
+    elAboutImg6.classList.remove("clients-scale", elAbout.scrollY > 100)
+    elAboutImg7.classList.remove("clients-scale", elAbout.scrollY > 100)
+    elAboutImg8.classList.remove("clients-scale", elAbout.scrollY > 100)
 })
 
 elAboutImg1.addEventListener("click", function() {
@@ -402,7 +409,7 @@ elAboutImg4.addEventListener("click", function() {
 
 elAboutImg5.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
-    elAboutImg6.classList.toggle("clients-scale")
+    elAboutImg5.classList.toggle("clients-scale")
     elBasicManu.classList.toggle("none")
     elPhone.classList.toggle("none")
 
@@ -411,6 +418,20 @@ elAboutImg5.addEventListener("click", function() {
 elAboutImg6.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg6.classList.toggle("clients-scale")
+    elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
+
+})
+elAboutImg7.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elAboutImg7.classList.toggle("clients-scale")
+    elBasicManu.classList.toggle("none")
+    elPhone.classList.toggle("none")
+
+})
+elAboutImg8.addEventListener("click", function() {
+    elBasixName.classList.toggle("opasity")
+    elAboutImg8.classList.toggle("clients-scale")
     elBasicManu.classList.toggle("none")
     elPhone.classList.toggle("none")
 

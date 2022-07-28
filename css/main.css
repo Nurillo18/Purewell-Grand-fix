@@ -580,7 +580,7 @@ body{
         transform: scale(0.8) translateY(-31px);
     }
     .img3{
-        transform: translateY(-4px) scale(1.2);
+        transform: translateY(-30px) scale(1);
     }
     .img4{
         transform: translateY(-3px);
@@ -641,7 +641,7 @@ body{
         right: 0;
         left: 0;
         margin:  auto;
-        transform: scale(0.25);
+        transform: scale(0.1);
         z-index: 9999;
     }
     .scales{
@@ -673,6 +673,10 @@ body{
     .img5{
         transform: scale(0.5) translateY(-171px);
     }
+    .img3{
+        transition: all 0.4s;
+        transform: scale(1) translateY(-20px);
+    }
     .hero__title{
         font-size: 30px;
     }
@@ -691,6 +695,17 @@ body{
         left: 0;
         margin:  auto;
         transform: scale(0.55);
+        z-index: 9999;
+    }
+    .scales{
+        transition: all 0.5s;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin:  auto;
+        transform: scale(0.5);
         z-index: 9999;
     }
 }
@@ -1041,6 +1056,7 @@ body{
     margin: auto;
     transform: scale(0.9);
 }
+
 .del-sec-opasity{
     display: none;
 }
@@ -1221,6 +1237,7 @@ body{
 .about-list__img{
     border-radius: 5px;
 }
+
 @media only screen and (max-width:836px){
     .about-list, .about-list__item{
         margin: 0 auto;
@@ -1261,6 +1278,9 @@ body{
 
     .about-list__img{
         width: 100%;
+    }
+    .clients-scale{
+        height: 525px;
     }
 }
 @media only screen and (max-width:440px){
