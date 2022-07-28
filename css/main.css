@@ -1564,4 +1564,5 @@ body{
 .cli{
     /* transform: scale(1); */
     height: 520px;
+    transition: all 0s;
 }
