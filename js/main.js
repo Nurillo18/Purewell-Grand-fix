@@ -181,6 +181,7 @@ let elSecImg3 = document.querySelector(".c-img3")
 let elSecImg4 = document.querySelector(".c-img4")
 let elSecImg5 = document.querySelector(".c-img5")
 let elSecImg6 = document.querySelector(".c-img6")
+let elSecImg7 = document.querySelector(".c-img7")
 
 let elSecItem1 = document.querySelector(".c-item1")
 let elSecItem2 = document.querySelector(".c-item2")
@@ -341,6 +342,7 @@ elSecImg6.addEventListener("click", function() {
     elSecItem6.classList.toggle("del-sec")
 
 })
+
 
 let elAboueItem1 = document.querySelectorAll(".about-item1")
 let elAboueItem2 = document.querySelectorAll(".about-item2")

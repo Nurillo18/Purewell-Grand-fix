@@ -509,7 +509,7 @@ body{
     transform: translateY(-51px) scale(0.7);
 }
 .img3{
-    transform: scale(1.4) translateY(25px);
+    transform: scale(1.2) translateY(-15px);
 }
 .img4{
     transform: scale(0.9) translateY(54px);
@@ -969,7 +969,6 @@ body{
 
 /* Clients Section Start */
 .clients-section{
-    margin-bottom: 100px;
     padding: 40px 0;
     text-align: center;
 }
