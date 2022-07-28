@@ -14,8 +14,50 @@ let elItem5 = document.querySelector(".item5")
 let elItem6 = document.querySelector(".item6")
 
 let elBasixName = document.querySelector(".site-main")
+let elHero = document.querySelector(".hero-section")
+let elAbout = document.querySelector(".about-us-section")
+let elBasicManu = document.querySelector(".basic-menu")
+
+
+window.addEventListener("scroll", function() {
+    elBasicManu.classList.remove("none", elHero.scrollY > 100)
+    elBasixName.classList.remove("opasity", elHero.scrollY > 100)
+    elImg1.classList.remove("scale", elHero.scrollY > 200)
+    elImg2.classList.remove("scale", elHero.scrollY > 200)
+    elImg3.classList.remove("scale", elHero.scrollY > 200)
+    elImg3.classList.remove("scales", elHero.scrollY > 200)
+    elImg4.classList.remove("scale", elHero.scrollY > 200)
+    elImg5.classList.remove("scale", elHero.scrollY > 200)
+    elImg6.classList.remove("scale", elHero.scrollY > 200)
+
+    elImg1.classList.remove("del", elHero.scrollY > 200)
+    elImg2.classList.remove("del", elHero.scrollY > 200)
+    elImg3.classList.remove("del", elHero.scrollY > 200)
+    elImg4.classList.remove("del", elHero.scrollY > 200)
+    elImg5.classList.remove("del", elHero.scrollY > 200)
+    elImg6.classList.remove("del", elHero.scrollY > 200)
+
+
+    elItem1.classList.remove("del-opasi", elHero.scrollY > 200)
+    elItem2.classList.remove("del-opasi", elHero.scrollY > 200)
+    elItem3.classList.remove("del-opasi", elHero.scrollY > 200)
+    elItem4.classList.remove("del-opasi", elHero.scrollY > 200)
+    elItem5.classList.remove("del-opasi", elHero.scrollY > 200)
+    elItem6.classList.remove("del-opasi", elHero.scrollY > 200)
+
+
+    elItem1.classList.remove("del", elHero.scrollY > 200)
+    elItem2.classList.remove("del", elHero.scrollY > 200)
+    elItem3.classList.remove("del", elHero.scrollY > 200)
+    elItem4.classList.remove("del", elHero.scrollY > 200)
+    elItem5.classList.remove("del", elHero.scrollY > 200)
+    elItem6.classList.remove("del", elHero.scrollY > 200)
+
+})
+
 
 elImg1.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
     elImg1.classList.toggle("scale")
     elImg2.classList.toggle("del")
     elImg3.classList.toggle("del")
@@ -32,6 +74,8 @@ elImg1.addEventListener("click", function() {
 
 })
 elImg2.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elImg2.classList.toggle("scale")
     elImg1.classList.toggle("del")
     elImg3.classList.toggle("del")
@@ -47,6 +91,8 @@ elImg2.addEventListener("click", function() {
     elItem6.classList.toggle("del")
 })
 elImg3.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elImg3.classList.toggle("scales")
     elImg1.classList.toggle("del")
     elImg2.classList.toggle("del")
@@ -64,6 +110,8 @@ elImg3.addEventListener("click", function() {
 
 })
 elImg4.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elImg4.classList.toggle("scale")
     elImg3.classList.toggle("del")
     elImg1.classList.toggle("del")
@@ -81,6 +129,8 @@ elImg4.addEventListener("click", function() {
 
 })
 elImg5.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elImg5.classList.toggle("scale")
     elImg4.classList.toggle("del")
     elImg3.classList.toggle("del")
@@ -97,6 +147,8 @@ elImg5.addEventListener("click", function() {
 
 })
 elImg6.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elImg6.classList.toggle("scale")
     elImg5.classList.toggle("del")
     elImg4.classList.toggle("del")
@@ -112,7 +164,7 @@ elImg6.addEventListener("click", function() {
     elItem6.classList.toggle("del-opasi")
 
 })
-
+let elClients = document.querySelector(".clients-section")
 let elSecImg1 = document.querySelector(".c-img1")
 let elSecImg2 = document.querySelector(".c-img2")
 let elSecImg3 = document.querySelector(".c-img3")
@@ -127,8 +179,40 @@ let elSecItem4 = document.querySelector(".c-item4")
 let elSecItem5 = document.querySelector(".c-item5")
 let elSecItem6 = document.querySelector(".c-item6")
 
+window.addEventListener("scroll", function() {
+
+    elSecItem1.classList.remove("del-sec", elClients.scrollY > 10)
+    elSecItem2.classList.remove("del-sec", elClients.scrollY > 10)
+    elSecItem3.classList.remove("del-sec", elClients.scrollY > 10)
+    elSecItem4.classList.remove("del-sec", elClients.scrollY > 10)
+    elSecItem5.classList.remove("del-sec", elClients.scrollY > 10)
+    elSecItem6.classList.remove("del-sec", elClients.scrollY > 10)
+
+    elSecItem1.classList.remove("del-sec-opasity", elClients.scrollY > 500)
+    elSecItem2.classList.remove("del-sec-opasity", elClients.scrollY > 500)
+    elSecItem3.classList.remove("del-sec-opasity", elClients.scrollY > 500)
+    elSecItem4.classList.remove("del-sec-opasity", elClients.scrollY > 500)
+    elSecItem5.classList.remove("del-sec-opasity", elClients.scrollY > 500)
+    elSecItem6.classList.remove("del-sec-opasity", elClients.scrollY > 00)
+
+
+    elSecImg1.classList.remove("clients-scale", elClients.scrollY > 500)
+    elSecImg2.classList.remove("clients-scale", elClients.scrollY > 500)
+    elSecImg3.classList.remove("clients-scale", elClients.scrollY > 500)
+    elSecImg4.classList.remove("clients-scale", elClients.scrollY > 500)
+    elSecImg5.classList.remove("clients-scale", elClients.scrollY > 500)
+    elSecImg6.classList.remove("clients-scale", elClients.scrollY > 500)
+
+    elSecImg1.classList.remove("del", elClients.scrollY > 500)
+    elSecImg2.classList.remove("del", elClients.scrollY > 500)
+    elSecImg3.classList.remove("del", elClients.scrollY > 500)
+    elSecImg4.classList.remove("del", elClients.scrollY > 500)
+    elSecImg5.classList.remove("del", elClients.scrollY > 500)
+    elSecImg6.classList.remove("del", elClients.scrollY > 500)
+})
 
 elSecImg1.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("clients-scale")
     elSecImg2.classList.toggle("del")
@@ -146,6 +230,8 @@ elSecImg1.addEventListener("click", function() {
 
 })
 elSecImg2.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
     elSecImg2.classList.toggle("clients-scale")
@@ -163,6 +249,8 @@ elSecImg2.addEventListener("click", function() {
 
 })
 elSecImg3.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
     elSecImg2.classList.toggle("del")
@@ -180,6 +268,8 @@ elSecImg3.addEventListener("click", function() {
 
 })
 elSecImg4.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
     elSecImg2.classList.toggle("del")
@@ -197,6 +287,8 @@ elSecImg4.addEventListener("click", function() {
 
 })
 elSecImg5.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
     elSecImg2.classList.toggle("del")
@@ -214,6 +306,8 @@ elSecImg5.addEventListener("click", function() {
 
 })
 elSecImg6.addEventListener("click", function() {
+    elBasicManu.classList.toggle("none")
+
     elBasixName.classList.toggle("opasity")
     elSecImg1.classList.toggle("del")
     elSecImg2.classList.toggle("del")
@@ -245,32 +339,52 @@ let elAboutImg4 = document.querySelector(".about-img4")
 let elAboutImg5 = document.querySelector(".about-img5")
 let elAboutImg6 = document.querySelector(".about-img6")
 
+
+window.addEventListener("scroll", function(){
+    elAboutImg1.classList.remove("clients-scale", elAbout.scrollY > 100)
+    elAboutImg2.classList.remove("clients-scale", elAbout.scrollY > 100)
+    elAboutImg3.classList.remove("clients-scale", elAbout.scrollY > 100)
+    elAboutImg4.classList.remove("clients-scale", elAbout.scrollY > 100)
+    elAboutImg5.classList.remove("clients-scale", elAbout.scrollY > 100)
+})
+
 elAboutImg1.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg1.classList.toggle("clients-scale")
+    elBasicManu.classList.toggle("none")
 })
 
 elAboutImg2.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg2.classList.toggle("clients-scale")
+    elBasicManu.classList.toggle("none")
+
 })
 
 elAboutImg3.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg3.classList.toggle("clients-scale")
+    elBasicManu.classList.toggle("none")
+
 })
 
 elAboutImg4.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg4.classList.toggle("clients-scale")
+    elBasicManu.classList.toggle("none")
+
 })
 
 elAboutImg5.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg6.classList.toggle("clients-scale")
+    elBasicManu.classList.toggle("none")
+
 })
 
 elAboutImg6.addEventListener("click", function() {
     elBasixName.classList.toggle("opasity")
     elAboutImg6.classList.toggle("clients-scale")
+    elBasicManu.classList.toggle("none")
+
 })

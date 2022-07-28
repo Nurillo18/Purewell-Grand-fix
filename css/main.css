@@ -1540,3 +1540,6 @@ body{
 .ring__items + .ring__items {
     margin-top: 10px;
 }
+.none{
+    opacity: 0;
+}
